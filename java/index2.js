@@ -1,3 +1,9 @@
+
+  // 2페이지 숫자 카운트
+  const index2=document.querySelector('.index2')
+
+
+
 $(function() {
 
     $('.in2').css({
@@ -15,7 +21,7 @@ $(function() {
   
     function timeCounter() {
   
-      id0 = setInterval(count0Fn, 5);
+      id0 = setInterval(count0Fn, 12);
   
       function count0Fn() {
         count0++;
@@ -36,8 +42,7 @@ $(function() {
     } 
   });
 
-
-  console.clear();
+//2페이지 호버 효과
 
   const { gsap, Splitting } = window;
   
@@ -55,3 +60,6 @@ $(function() {
     .fromTo(".card__image--wrapper", { yPercent: 110 }, { yPercent: 0 }, 0)
     .fromTo(".card__image--outer", { yPercent: -110 }, { yPercent: 0 }, 0)
     .set(".cards__wrapper, .card", { pointerEvents: "all" }, "-=1");
+
+
+   

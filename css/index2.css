@@ -1,22 +1,30 @@
+.view {
+  width: 100%;
+}
+
 .index2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url("/js/img/page2/kv.jpg");
-  width: 100%;
-}
-
-.box {
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 
 .container {
   font-size: 1.5rem;
-  overflow-y: initial;
-  overflow-x: hidden;
-  width: 40%;
-  height: 600px;
-  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title {
@@ -59,15 +67,17 @@
 
 .in1 {
   width: 33%;
+  color: white;
 }
 
 .in2 {
   width: 33%;
+  color: white;
 }
 
 .in2 span {
-  display: block;
   font-size: 3rem;
+  z-index: 99;
 }
 
 .in3 {
@@ -80,7 +90,7 @@
   left: -20%;
   top: 0;
   font-size: 2rem;
-  color: gray;
+  color: white;
   font-weight: bold;
 }
 

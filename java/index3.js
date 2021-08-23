@@ -1,80 +1,52 @@
-$(document).ready(function(){
-    let d_width =0;
-    let d_height=0;
+// $(document).ready(function(){
+//     // let d_width =0;
+//     // let d_height=0;
 
-        function tmp(){
-            let con_width= $(window).outerWidth() * $('.box').length;
+//     //     function tmp(){
+//     //         let con_width= $(window).outerWidth() * $('.box').length;
 
-            $('.sec3').css({
-                width:con_width,
-                height:'100vh',
-                top:0,
-                left:0
-            });
-            $('.box').css({
-                width: con_width / $('.box').length,
-                height: '100vh',
-                float: 'left'
-            });
+//     //         $('.sec3').css({
+//     //             width:con_width,
+//     //             height:'100vh',
+//     //             top:0,
+//     //             left:0
+//     //         });
+//     //         $('.box').css({
+//     //             width: con_width / $('.box').length,
+//     //             height: '100vh',
+//     //             float: 'left'
+//     //         });
 
-            $('.view').css({
-                height:'100vh'
-            })
-
-            let w_width = $(window).width();
-            let w_height= $(window).height()
-
-            d_width=con_width - w_width;
-            d_height=$('sec3').height()-w_height
-        }
-        tmp();
-
-        let array = [];
-        for(let i=0; i<$('.box').length; i++) {
-            array[i] = $('.box').eq(i).offset().left
-        }
-
-        let chk = true;
-        $('.box').on('mousewheel DOMMouseScroll', function(){
-
-            if(chk) {
-                // 휠 일정시간동안 막기
-                chk = false;
-                setTimeout(function(){
-                    chk = true;
-                }, 100)
-
-                // 휠 방향 감지(아래: -120, 위: 120)
-                let w_delta = event.wheelDelta / 120;
-                
-                // 휠 아래로
-                if(w_delta < 0 && $(this).next().length > 0) {
-                    $('.sec3').animate({
-                        left: -array[$(this).index()+1]
-                     
-                    }, 500)
-                }
-                // 휠 위로
-                else if(w_delta > 0 && $(this).prev().length > 0) {
-                    $('.sec3').animate({
-                        left: -array[$(this).index()-1]
-                    }, 500)
-                   
-                }
-            }
-
-            $(window).resize(function(){
-                for(let i=0; i<$('.box').length; i++) {
-                    array[i] = $('.box').eq(i).offset().left
-                }
-    
-                tmp();
-            })
-        });
-
-})
+//     //         $('.view').css({
+//     //             height:'100vh'
+//     //         })
 
 
+//     //         let w_width = $(window).width();
+//     //         let w_height= $(window).height()
+
+//     //         d_width=con_width - w_width;
+//     //         d_height=$('sec3').height()-w_height
+//     //     }
+//     //     tmp();
+
+//     //     let array = [];
+//     //     for(let i=0; i<$('.box').length; i++) {
+//     //         array[i] = $('.box').eq(i).offset().left
+//     //     }
+
+
+
+        
+
+      
+        
+
+
+
+// })
+
+//메인페이지 화살표 
 const sec3=document.querySelector('.button3')
 const sec3txt=document.querySelector('.button3 txt')
 const sec3mask=document.querySelector('.button3 ico-mask')

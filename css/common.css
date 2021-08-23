@@ -16,34 +16,40 @@ ul,li,ol{
 h1,h2,h3,h4,h5,h6,figure,p,article{margin: 0;padding: 0;}
 img{vertical-align: top;}
 a{text-decoration: none;}
-header{margin: 0; padding: 0;}
+header{margin: 0; padding: 0; transition:.5s;}
 aside{margin: 0; padding: 0;}
 
-
-#arr{position: absolute;
-    z-index: 9999;
-    left: 95%;
-    top: 900px;
+.arr{position: relative;}
+.maskdown{
+    border: 2px solid white;
+    position: absolute; z-index: 999999999;
+    left: 90%; bottom:-800px;
     width: 50px;
-}
-#arr .icodown1 img{
-    transform: translateY(90deg);}
-
-
-.topheader .icodown1{
-    position: absolute;
-    position: fixed;
-    color:black;
-    left: 85%;
-    top: 90%;
-    z-index: 5;
-    animation: arr 1s infinite alternate;
+    height: 100px;
+    border-radius:30px;
+    overflow: hidden;
+    
+    
     
 }
+.maskdown img{
+    height: 40px;
+    position: block;
+    }
 
-@keyframes arr{    
+#transimg{
+    animation: maskdown 1s infinite; 
+    margin-left: 15px;}
+
+#transimg1{display: none; }
+.icodown{transform: translateY();}
+
+@keyframes maskdown{ 
     from{ transform: translateY(0%); }  
-    to{ transform: translateY(50%); }  }
+    to{ transform: translateY(250%); } 
+}
+
+
 
 
 .topheader{
@@ -58,14 +64,8 @@ aside{margin: 0; padding: 0;}
     background-color: white;
     width:100%; height: 160px;
     transition: 0.3s;
-    mix-blend-mode: difference;
-  
 }
-.topheader .bg.active{ 
-    transform: translateY(0%);
-    
 
-} 
 .nav{
     width: 90%; 
     margin:30px auto; 
@@ -117,9 +117,13 @@ aside{margin: 0; padding: 0;}
     }
 }
 
-.hide{display: none;}
 
-
+.topheader .bg.active { 
+    transform: translateY(0%);
+} 
+.topheader.active{transform: translateY(-100%);}
+.topheader.white{background:#fff;}
+.topheader.white .menu li > a {color:#000;}
 
 
 footer{

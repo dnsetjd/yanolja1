@@ -1,14 +1,22 @@
+.view{width: 100%;}
 .index2{
     
     display: flex;
-    background-image: url('/js/img/page2/kv.jpg'); 
-    width: 100%; 
+    background-image: url('/js/img/page2/kv.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    width: 100%;
 }
 
-.box{width: 100%;}
-.container{font-size: 1.5rem;
-   
-    overflow-y:initial; overflow-x:hidden; width:40%; height:600px; color: white;}
+.container{
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  
+   }
 .title{margin: 250px 0 50px 10px;}
 .title h2{margin: 50px 0 50px 10px;}
 .title ul li{margin: 50px 0 50px 10px;}
@@ -24,11 +32,11 @@
 
 
 .index2-a{width: 100%; height: 300px; display: flex; margin: 10% 0 0 10%;font-size: 3rem;}
-.in1{width: 33%;}
-.in2{width: 33%;}
-.in2 span{display:block; font-size: 3rem;}
+.in1{width: 33%;color: white;}
+.in2{width: 33%; color: white;}
+.in2 span{ font-size: 3rem; z-index: 99;}
 .in3{width: 33%; position: relative;}
-.in3 span{position: absolute;left: -20%;top: 0; font-size:2rem;color: gray;font-weight: bold;}
+.in3 span{position: absolute;left: -20%;top: 0; font-size:2rem;color: white;font-weight: bold;}
 
 * {
     box-sizing: border-box;
