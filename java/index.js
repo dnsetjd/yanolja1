@@ -183,3 +183,164 @@ function parallax(e) {
 }
 
 
+// //index2 페이지 부분
+
+// $(document).ready(function(){
+
+ 
+//     $(".condetail1 .h2hiden").click(function(){
+//       let condetailslide = $(this).next("ul");
+//       // let h2hiden = $(this).find("h2");
+     
+//       if( condetailslide.is(":visible") ){
+//         condetailslide.slideUp();
+//         $("h2").text("PLATFORM BUSINESS ▼")
+//     }else{
+//       condetailslide.slideDown();
+//       $("h2").text("PLATFORM BUSINESS ▲")
+//     }
+  
+  
+//     })
+//   })
+    
+  
+  
+  
+//   $(function(){
+//     let count=3500;
+  
+//     time();
+//     function time(){
+//       id=setInterval(lastcount,10);
+  
+//       function lastcount(){
+//         count ++;
+//         if(count==4001){
+//           clearInterval(id)
+          
+//         }else{
+//           $(".last").eq(0).text(count+"만+");
+//         }
+//       }
+//     }
+//   })
+    
+    
+    
+    
+//     // 2페이지 숫자 카운트
+  
+  
+  
+//   $(function() {
+  
+//       $('.in2').css({
+//           color:'red',
+//           fontsize:'60px',
+          
+  
+//       });
+    
+//       var count0 =14999500;
+//       var size=58; 
+//       var in2=$(".in2");
+  
+//       timeCounter();
+    
+//       function timeCounter() {
+    
+//         id0 = setInterval(count0Fn, 12);
+    
+//         function count0Fn() {
+//           count0++;
+          
+//           if (count0 ==15000001) {
+//             clearInterval(id0);
+//             size++;
+//             in2.css("font-size",size+"px");
+            
+//           } else {
+//             $(".in2").eq(0).text(count0+"만");
+           
+//           }
+    
+//         }
+    
+  
+//       } 
+//     });
+  
+//   //2페이지 호버 효과
+  
+//     const { gsap, Splitting } = window;
+    
+//     Splitting();
+    
+//     gsap.set('.cards__wrapper', { autoAlpha: 1 })
+    
+//     gsap.timeline({
+//       defaults: {
+//         duration: 1.25,
+//         stagger: 0.125,
+//         ease: "expo.inOut",
+//       },
+//     })
+//       .fromTo(".card__image--wrapper", { yPercent: 110 }, { yPercent: 0 }, 0)
+//       .fromTo(".card__image--outer", { yPercent: -110 }, { yPercent: 0 }, 0)
+//       .set(".cards__wrapper, .card", { pointerEvents: "all" }, "-=1");
+  
+  
+     
+//   //index3페이지 부분
+
+  
+// //메인페이지 화살표 
+// const sec3=document.querySelector('.button3')
+// const sec3txt=document.querySelector('.button3 txt')
+// const sec3mask=document.querySelector('.button3 ico-mask')
+
+// sec3.addEventListener('mouseenter',function(){
+   
+//     sec3.classList.add('active');
+//     sec3txt.style.color="white";
+//     sec3txt.style.transform="translateX(30px)";
+//     sec3mask.style.transition="0.5s";
+ 
+     
+//  });
+//  sec3.addEventListener('mouseleave',function(){
+    
+//      sec3.classList.remove('active')
+//      sec3txt.style.color="black";
+//      sec3txt.style.transform="translateX(0px)"
+//      sec3mask.style.transition="0.5s"
+ 
+//   });
+ 
+
+
+//   const sec2=document.querySelector('.button2')
+//   const sec2txt=document.querySelector('.button2 txt')
+//   const sec2mask=document.querySelector('.button2 ico-mask')
+
+//   sec2.addEventListener('mouseenter',function(){
+   
+//     sec2.classList.add('active');
+//     sec2txt.style.color="white";
+//     sec2txt.style.transform="translateX(30px)";
+//     sec3mask.style.transition="0.5s";
+ 
+     
+//  });
+//  sec2.addEventListener('mouseleave',function(){
+    
+//      sec2.classList.remove('active')
+//      sec2txt.style.color="black";
+//      sec2txt.style.transform="translateX(0px)"
+//      sec2mask.style.transition="0.5s"
+ 
+//   });
+
+
+

@@ -1,6 +1,48 @@
+$(document).ready(function(){
 
+ 
+  $(".condetail1 .h2hiden").click(function(){
+    let condetailslide = $(this).next("ul");
+    // let h2hiden = $(this).find("h2");
+   
+    if( condetailslide.is(":visible") ){
+      condetailslide.slideUp();
+      $("h2").text("PLATFORM BUSINESS ▼")
+  }else{
+    condetailslide.slideDown();
+    $("h2").text("PLATFORM BUSINESS ▲")
+  }
+
+
+  })
+})
+  
+
+
+
+$(function(){
+  let count=3500;
+
+  time();
+  function time(){
+    id=setInterval(lastcount,10);
+
+    function lastcount(){
+      count ++;
+      if(count==4001){
+        clearInterval(id)
+        
+      }else{
+        $(".last").eq(0).text(count+"만+");
+      }
+    }
+  }
+})
+  
+  
+  
+  
   // 2페이지 숫자 카운트
-  const index2=document.querySelector('.index2')
 
 
 
@@ -17,6 +59,8 @@ $(function() {
     var size=58; 
     var in2=$(".in2");
 
+    
+
     timeCounter();
   
     function timeCounter() {
@@ -32,7 +76,7 @@ $(function() {
           in2.css("font-size",size+"px");
           
         } else {
-          $(".in2").eq(0).text(count0);
+          $(".in2").eq(0).text(count0+"만");
          
         }
   
