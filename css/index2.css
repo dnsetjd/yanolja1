@@ -3,56 +3,60 @@
 }
 
 .index2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url("/js/img/page2/kv.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
+  background-image: url(/js/img/page2/kv.jpg);
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 1000px;
+  font-size: 1.5rem;
+  position: relative;
 }
 
-.container {
-  font-size: 1.5rem;
-  width: 100%;
+.index2::-webkit-scrollbar {
+  display: none;
+}
+
+.index2con {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  left: 70%;
+  top: 15%;
+  color: white;
 }
 
-.title {
-  margin: 250px 0 50px 10px;
+.index2con .condetail1 {
+  margin-top: 40%;
 }
 
-.title h2 {
-  margin: 50px 0 50px 10px;
+.index2con .condetail1 .condetailhide {
+  display: none;
 }
 
-.title ul li {
-  margin: 50px 0 50px 10px;
+.index2con .condetail2 {
+  margin-top: 60%;
 }
 
-.detail {
-  margin: 50px 0 50px 10px;
+.index2con .condetail2 p {
+  margin-top: 10%;
 }
 
-.detail h2 {
-  margin: 50px 0 50px 10px;
+.index2con .condetail3 {
+  margin-top: 30%;
 }
 
-.detail h2 p {
-  margin: 50px 0 50px 10px;
+.index2con .condetail3 p {
+  margin-top: 10%;
 }
 
-.detail1 ul li {
-  margin: 50px 0 50px 10px;
+.bold {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .index2-a {
